@@ -10,11 +10,12 @@ function randomDice() {
   } else {
     document.querySelector("h1").innerHTML = "Player 1 Won";
   }
+  document.querySelector(".btn").innerHTML = "Play Again";
 }
 function reloadPage() {
   location.reload();
 }
-document.querySelector(".btn").addEventListener("click", reloadPage);
+document.querySelector(".btn").addEventListener("click", randomDice);
 var imageFilePath = [
   "./images/dice1.png",
   "./images/dice2.png",
@@ -23,4 +24,3 @@ var imageFilePath = [
   "./images/dice5.png",
   "./images/dice6.png",
 ];
-randomDice();
