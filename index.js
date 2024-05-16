@@ -6,9 +6,9 @@ function randomDice() {
   if (playerOnePoint == playerTwoPoint) {
     document.querySelector("h1").innerHTML = "Draw";
   } else if (playerOnePoint < playerTwoPoint) {
-    document.querySelector("h1").innerHTML = "Player 2 Won";
+    document.querySelector("h1").innerHTML = "Player 2 Won 🚩";
   } else {
-    document.querySelector("h1").innerHTML = "Player 1 Won";
+    document.querySelector("h1").innerHTML = "🚩 Player 1 Won";
   }
   document.querySelector(".btn").innerHTML = "Play Again";
 }
